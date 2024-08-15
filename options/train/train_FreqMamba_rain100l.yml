@@ -55,7 +55,7 @@ datasets:
 
 # network structures
 network_g:
-  type: MambaIRUNet
+  type: FreqMamba
   inp_channels: 3
   out_channels: 3
   dim: 24
