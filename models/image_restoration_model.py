@@ -75,7 +75,7 @@ arch_folder = osp.dirname(osp.abspath(__file__))
 arch_folder = os.path.join(arch_folder,'archs')
 arch_filenames = [
     osp.splitext(osp.basename(v))[0] for v in scandir(arch_folder)
-    if v.endswith('_arch_fram_dwt.py')
+    if v.endswith('_arch.py')
 ]
 _arch_modules = [
     importlib.import_module(f'basicsr.models.archs.{file_name}')
